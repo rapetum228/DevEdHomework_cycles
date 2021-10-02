@@ -11,7 +11,7 @@ namespace Exercise_8
                 "Найдите число N методом половинного деления.\n");
             Console.WriteLine("Пожалуйста, введите число, являющееся кубом какого-то целого числа:");
             int userNum = Convert.ToInt32(Console.ReadLine());
-            double start, end, middle=0, root = 0;
+            double start, end, middle=0;
             start = 0;
             end = 1.0 * userNum;
 
@@ -20,13 +20,12 @@ namespace Exercise_8
 
                 if (middle * middle * middle > userNum) 
                 {
-                    start = start;
+
                     end = middle;
                 }
                 else
                 {
                     start = middle;
-                    end = end;
                 }
 
             }
