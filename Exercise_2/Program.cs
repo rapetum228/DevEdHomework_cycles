@@ -9,7 +9,7 @@ namespace Exercise_2
             Console.WriteLine("Пользователь вводит 1 число (A). Вывести все числа");
             Console.WriteLine("от 1 до 1000, которые делятся на A");
             Console.WriteLine();
-            int A, divided_by_A;
+            int A, dividedByA;
             Console.WriteLine("Введите число A: ");
             A = Convert.ToInt32(Console.ReadLine());
 
@@ -17,8 +17,8 @@ namespace Exercise_2
             {
                 if (i % A == 0)
                 {
-                    divided_by_A = i;
-                    Console.WriteLine($"Число {divided_by_A} делится на {A} с результатом {i/A}");
+                    dividedByA = i;
+                    Console.WriteLine($"Число {dividedByA} делится на {A} с результатом {i/A}");
                 }
             }
         }
