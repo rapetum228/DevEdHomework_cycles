@@ -10,7 +10,7 @@ namespace Exercise_5
                 "Вывести сумму всех чисел из диапазона от A до B, " +
                 "которые делятся без остатка на 7. " +
                 "(Учтите, что при вводе B может оказаться меньше A)" + "\n");
-            int A, B, start_range, end_range;
+            int A, B, startRange, endRange;
             int counter = 0;
             Console.WriteLine("Введите число A: ");
             A = Convert.ToInt32(Console.ReadLine());
@@ -18,22 +18,22 @@ namespace Exercise_5
             B = Convert.ToInt32(Console.ReadLine());
             if (A < B)
             {
-                start_range = A;
-                end_range = B;
+                startRange = A;
+                endRange = B;
             }
             else
             {
-                start_range = B;
-                end_range = A;
+                startRange = B;
+                endRange = A;
             }
 
-            for (int i = start_range; i <= end_range; i++)
+            for (int i = startRange; i <= endRange; i++)
             {
                 if (i % 7 == 0)
                     counter += i;
             }
             Console.WriteLine($"\nСумма чисел делящихся на 7 " +
-                $"от {start_range} до {end_range} равна {counter}");
+                $"от {startRange} до {endRange} равна {counter}");
             
 
 
