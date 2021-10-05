@@ -14,17 +14,17 @@ namespace Exercise_6
             int N;
             Console.WriteLine("Введите число N: ");
             N = Convert.ToInt32(Console.ReadLine());
-            int first_prev = 1;
-            int second_prev = 1;
-            int FibonacciNumber = 0;
+            int firstPrev = 1;
+            int secondPrev = 1;
+            int fibonacciNumber = 0;
 
-            while (FibonacciNumber < N - first_prev)
+            while (fibonacciNumber < N - firstPrev)
             {
-                FibonacciNumber = first_prev + second_prev;
-                first_prev = second_prev;
-                second_prev = FibonacciNumber;
+                fibonacciNumber = firstPrev + secondPrev;
+                firstPrev = secondPrev;
+                secondPrev = fibonacciNumber;
             }
-            Console.WriteLine($"\nЧисло Фибоначчи до N = {N} это {FibonacciNumber}");
+            Console.WriteLine($"\nЧисло Фибоначчи до N = {N} это {fibonacciNumber}");
 
         }
     }
