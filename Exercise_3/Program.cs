@@ -11,13 +11,13 @@ namespace Exercise_3
             int A;
             Console.WriteLine("Введите число A: ");
             A = Convert.ToInt32(Console.ReadLine());
-            int squared_number_less_A = 1;
-            while(squared_number_less_A*squared_number_less_A < A)
+            int squaredNumberLessA = 1;
+            while(squaredNumberLessA * squaredNumberLessA < A)
             {
-                squared_number_less_A++;
+                squaredNumberLessA++;
 
             }
-            Console.WriteLine($"{squared_number_less_A - 1} - количество чисел, " +
+            Console.WriteLine($"{squaredNumberLessA - 1} - количество чисел, " +
                 $"квадрат которых меньше {A} ");
 
         }
