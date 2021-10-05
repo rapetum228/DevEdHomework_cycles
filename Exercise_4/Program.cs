@@ -11,15 +11,18 @@ namespace Exercise_4
             int A;
             Console.WriteLine("Введите число A: ");
             A = Convert.ToInt32(Console.ReadLine());
-            int divider_A = 0;
+            int dividerA = 0;
 
-            for (int i=1; i < A; i++)
+            for (int i=A-1; i > 0; i--)
             {
                 if (A % i == 0 && A != i)
-                    divider_A = i;
+                {
+                    dividerA = i;
+                    break;
+                }
             }
             
-            Console.WriteLine($"Наибольший делитель {A} число {divider_A}");
+            Console.WriteLine($"Наибольший делитель {A} число {dividerA}");
         }
     }
 }
